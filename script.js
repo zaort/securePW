@@ -26,25 +26,25 @@ function generatePassword() {
   }
 
   // Ask user for lowercase usage in passowrd
-  var lowercaseChoice = window.confirm("Do you want lowercase in you password: (Enter yes or no)");
+  var lowercaseChoice = window.confirm("Do you want lowercase in you password: (OK = Yes | Cancel = No)");
   if (lowercaseChoice) {
     chosencharachters = chosencharachters.concat(letters);
   }
 
   // Ask user for uppercase usage in password
-  var uppercaseChoice = window.confirm("Do you want uppercase in you password: (Enter Yes or No)");
+  var uppercaseChoice = window.confirm("Do you want uppercase in you password: (OK = Yes | Cancel = No)");
   if (uppercaseChoice) {
     chosencharachters = chosencharachters.concat(uppercaseletters);
   }
 
   // Ask for numeric characters in password
-  var numericChoice = window.confirm("Do you want numeric characters in you password: (Enter Yes or No)");
+  var numericChoice = window.confirm("Do you want numeric characters in you password: (OK = Yes | Cancel = No)");
   if (numericChoice) {
     chosencharachters = chosencharachters.concat(numbers);
   }
 
   // Ask for special charachters in password
-  var specialcharChoice = window.confirm("Do you want special characters in you password: (Enter Yes or No)");
+  var specialcharChoice = window.confirm("Do you want special characters in you password: (OK = Yes | Cancel = No)");
   if (specialcharChoice) {
     chosencharachters = chosencharachters.concat(symbols);
   }
